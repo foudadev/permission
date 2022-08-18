@@ -117,8 +117,6 @@ Put in mind that it's a polymorphic relationship so to get reversed relation ```
 
 - ```$user->canAccess($subPermissionName)``` You need to pass a sub-permission name to this method as the only one parameter it accepts in order to check if the user have this specific sub-permission.
 
-- ```$user->canAccess($subPermissionName)``` You need to pass a sub-permission name to this method as the only one parameter it accepts in order to check if the user have this specific sub-permission.
-
 - ```$user->leaveAllRoles()``` This method don't accept any parameters and it just detach all roles related to the user.
 
 - ```User::HasPermissions($permissionsIds)``` This is a query scope method in order to filter users whom have specific permissions and you can fetch the result as usual as using ```->get()```, ```->first()``` or any other method as used to use.
